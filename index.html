@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Zielona infrastruktura i dachy zielone - portal o adaptacji miast | ZielonaInfrastruktura.pl</title>
+<meta name="description" content="Portal ZielonaInfrastruktura.pl od 2013 roku: dachy zielone, retencja wód opadowych, dofinansowania i przepisy, adaptacja miast do zmian klimatu. Redakcja: Katarzyna Wolańska.">
+<meta name="theme-color" content="#0f3d24">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0104-0107,U+010C-010D,U+0118-011B,U+0141-0144,U+0158-0161,U+016E-016F,U+0179-017E}
+@font-face{font-family:"Archivo-fb";src:local("Arial");size-adjust:101%;ascent-override:90%;descent-override:22%;line-gap-override:0%}
+:root{--z:#3ab54a;--z2:#17803a;--z3:#126a30;--ciem:#0f3d24;--szary:#b7b8ba;--ink:#16201a;--mut:#4b5650;--g:#f1f4f5;--line:#d9dfe1;--hh:64px;--w:min(calc(100vw - 32px),2240px)}
+@media (min-width:761px){:root{--hh:82px;--w:min(92vw,2240px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Archivo,"Archivo-fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.18vw + 15px,19px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;font-weight:750;letter-spacing:-.01em}
+h2{font-size:clamp(28px,2.2vw + 14px,52px)}
+h3{font-size:clamp(19px,.5vw + 16px,24px);font-weight:700}
+p{margin:0 0 1em}
+.wrap{width:var(--w);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--z2);color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:15px 24px;border-radius:3px;border:0;cursor:pointer;font-family:inherit;line-height:1.2;transition:background .2s}
+.btn:hover{background:var(--z3)}
+.btn svg{width:22px;height:12px;flex:none}
+.btn.jasny{background:#fff;color:var(--ciem)}
+.btn.jasny:hover{background:#e6f4e8}
+/* motyw: zielony dach z logo */
+.dach{display:block;width:64px;height:20px;margin:0 0 18px;color:var(--z)}
+.dach.duzy{width:clamp(120px,10vw,190px);height:clamp(36px,3vw,56px);margin-bottom:22px}
+.sek{padding:clamp(64px,7vw,128px) 0}
+.sek-g{background:var(--g)}
+.glowa{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,3vw,52px)}
+.glowa p{max-width:62ch;color:var(--mut);margin:14px 0 0}
+.wiecej{font-weight:700;color:var(--z2);text-decoration:none;display:inline-flex;gap:10px;align-items:center;white-space:nowrap}
+.wiecej svg{width:20px;height:11px}
+.wiecej:hover{text-decoration:underline}
+
+/* naglowek */
+#top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+#top.sc{border-bottom-color:var(--line);box-shadow:0 4px 18px rgba(22,32,26,.06)}
+.bar{height:var(--hh);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1}
+.logo svg{width:auto;height:44px;flex:none}
+.logo span{display:flex;flex-direction:column;gap:3px}
+.logo b{color:var(--z2);font-size:21px;font-weight:800;letter-spacing:-.01em}
+.logo i{font-style:normal;color:#6e7173;font-size:15px;font-weight:600}
+@media (min-width:761px){.logo svg{height:54px}.logo b{font-size:24px}.logo i{font-size:16px}}
+.menu{display:flex;align-items:center;gap:clamp(14px,1.5vw,30px)}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;position:relative;padding:6px 0;white-space:nowrap}
+.menu a:not(.btn):hover,.menu a.on{color:var(--z2)}
+.menu a.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--z)}
+.menu .btn{padding:11px 18px;font-size:15px}
+#burger{display:none}
+@media (max-width:1320px){
+ #burger{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:3px;cursor:pointer;padding:0}
+ #burger span{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:background .2s}
+ #burger span::before,#burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:transform .25s}
+ #burger span::before{top:-6px}#burger span::after{top:6px}
+ #top.open #burger span{background:transparent}
+ #top.open #burger span::before{transform:translateY(6px) rotate(45deg)}
+ #top.open #burger span::after{transform:translateY(-6px) rotate(-45deg)}
+ .menu{position:fixed;left:0;right:0;top:var(--hh);bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px 16px 32px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .25s,transform .25s,visibility .25s;overflow-y:auto;border-top:1px solid var(--line)}
+ #top.open .menu{opacity:1;visibility:visible;transform:none}
+ .menu a{font-size:20px;padding:15px 4px;border-bottom:1px solid var(--line)}
+ .menu a.on::after{display:none}
+ .menu .btn{margin-top:22px;justify-content:center;font-size:17px;padding:16px;border:0}
+}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#1d3a24}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,26,14,.86) 0%,rgba(8,26,14,.62) 38%,rgba(8,26,14,.12) 72%,rgba(8,26,14,0) 100%),linear-gradient(0deg,rgba(8,26,14,.55) 0%,rgba(8,26,14,0) 45%)}
+.hero-in{position:relative;z-index:1;width:var(--w);margin:0 auto;padding:clamp(40px,6vh,90px) 0 clamp(40px,8vh,110px);display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-txt{max-width:min(980px,100%)}
+.hero h1{font-size:clamp(34px,3.3vw + 12px,82px);font-weight:780;letter-spacing:-.02em;margin-bottom:22px;text-wrap:balance}
+.hero p.lead{font-size:clamp(17px,.5vw + 15px,23px);line-height:1.5;max-width:44ch;margin:0 0 32px;color:#e9f2eb}
+.hero .dach{color:var(--z)}
+.naj{display:block;max-width:400px;background:rgba(255,255,255,.96);color:var(--ink);text-decoration:none;padding:20px 22px 22px;border-top:4px solid var(--z);flex:none}
+.naj small{display:block;color:var(--z2);font-weight:700;font-size:14px;margin-bottom:6px}
+.naj b{display:block;font-size:19px;line-height:1.3;font-weight:700}
+.naj:hover b{text-decoration:underline}
+@media (max-width:1100px){.naj{display:none}}
+@media (max-width:760px){
+ .hero{align-items:stretch}
+ .hero::after{background:linear-gradient(0deg,rgba(8,26,14,.92) 0%,rgba(8,26,14,.78) 42%,rgba(8,26,14,.25) 75%,rgba(8,26,14,.1) 100%)}
+ .hero-in{flex-direction:column;justify-content:flex-end;padding:32px 0 34px}
+ .hero h1{font-size:clamp(30px,8.4vw,40px);margin-bottom:16px}
+ .hero p.lead{font-size:17px;margin-bottom:26px}
+ .dach.duzy{width:110px;height:34px;margin-bottom:16px}
+}
+@media (max-width:760px) and (max-height:680px){.hero h1{font-size:clamp(28px,7.6vw,34px)}.hero p.lead{font-size:16px}}
+
+/* artykuly */
+.siatka{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(22px,2vw,36px)}
+@media (min-width:700px){.siatka{grid-template-columns:repeat(2,minmax(0,1fr))}.siatka .glowny{grid-column:span 2}}
+@media (min-width:1100px){.siatka{grid-template-columns:repeat(3,minmax(0,1fr))}.siatka .glowny{grid-row:span 2}}
+@media (min-width:1600px){.siatka{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.art{display:flex;flex-direction:column;text-decoration:none;color:inherit;min-width:0}
+.art .fot{position:relative;aspect-ratio:16/10;margin:0 0 16px;background:var(--g)}
+.art .fot img{width:100%;height:100%;object-fit:cover;clip-path:polygon(0 16px,50% 0,100% 16px,100% 100%,0 100%)}
+.art .fot svg{position:absolute;left:0;top:-2px;width:100%;height:20px;color:var(--z);overflow:visible}
+.art .meta{font-size:14px;color:var(--mut);font-weight:600;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.art .meta b{color:var(--z2);font-weight:700}
+.art h3{transition:color .2s}
+.art p{color:var(--mut);margin:10px 0 0;font-size:.95em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.art:hover h3{color:var(--z2)}
+.glowny .fot{aspect-ratio:4/3;background:#fff}
+.glowny .fot img{object-fit:contain;background:#fff;clip-path:polygon(0 24px,50% 0,100% 24px,100% 100%,0 100%)}
+.glowny .fot svg{height:28px}
+.glowny h3{font-size:clamp(24px,1.2vw + 16px,38px);line-height:1.15}
+.glowny p{-webkit-line-clamp:5;font-size:1em}
+@media (min-width:1100px){.glowny .fot{aspect-ratio:auto;flex:1 1 auto;min-height:340px}}
+
+@media (max-width:699px){.siatka .art:nth-child(n+6){display:none}}
+/* tematy */
+.tory{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,340px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.tory::-webkit-scrollbar{display:none}
+.tory>*{scroll-snap-align:start}
+.tory.drag{scroll-snap-type:none;cursor:grabbing}
+@media (min-width:1100px){.tematy{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible}}
+@media (min-width:1600px){.tematy{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.temat{position:relative;display:block;aspect-ratio:3/4;color:#fff;text-decoration:none;overflow:hidden;background:#24402c}
+.temat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.temat::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,26,14,.9) 0%,rgba(8,26,14,.35) 45%,rgba(8,26,14,0) 70%)}
+.temat:hover img{transform:scale(1.04)}
+.temat div{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px 20px}
+.temat .dach{width:46px;height:14px;margin-bottom:12px}
+.temat h3{font-size:clamp(21px,.6vw + 17px,27px)}
+.temat p{margin:6px 0 0;font-size:15px;line-height:1.45;color:#dfeae2}
+.dzialy{margin-top:34px;color:var(--mut);font-size:16px;line-height:1.9}
+.dzialy b{color:var(--ink);margin-right:6px}
+.dzialy a{text-decoration:none;color:var(--ink);font-weight:600;white-space:nowrap}
+.dzialy a:hover{color:var(--z2);text-decoration:underline}
+.dzialy span{color:var(--szary);margin:0 8px}
+.nav-t{display:flex;gap:10px}
+.nav-t[hidden]{display:none}
+.nav-t button{width:48px;height:48px;border:1px solid #c5cdd0;background:#fff;border-radius:3px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.nav-t button:disabled{opacity:.35;cursor:default}
+.nav-t svg{width:20px;height:12px}
+@media (min-width:1100px){.nav-t.t1{display:none}}
+
+/* mocna sekcja */
+.ciem{background:var(--ciem);color:#fff}
+.ciem .glowa p{color:#c9dccf}
+.pien{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,4vw,80px);align-items:start}
+@media (min-width:1000px){.pien{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}
+.pien figure{margin:0;position:relative}
+.pien figure img{width:100%;aspect-ratio:1919/1200;object-fit:cover;clip-path:polygon(0 28px,50% 0,100% 28px,100% 100%,0 100%)}
+.pien figure svg{position:absolute;left:0;top:-3px;width:100%;height:32px;color:var(--z)}
+.pien figcaption{font-size:14px;color:#a9c4b1;margin-top:10px}
+.lista{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
+.lista li{border-bottom:1px solid rgba(255,255,255,.18)}
+.lista a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 22px;padding:24px 0;text-decoration:none}
+.lista .data{font-size:14px;font-weight:700;color:var(--z);white-space:nowrap;padding-top:4px;font-stretch:88%}
+.lista h3{font-size:clamp(19px,.6vw + 16px,26px);line-height:1.25}
+@media (max-width:600px){.lista a{grid-template-columns:minmax(0,1fr)}.lista p{grid-column:1!important}}
+@media (max-width:999px){.pien figure{order:2}}
+.lista p{grid-column:2;margin:0;color:#c9dccf;font-size:.95em}
+.lista a:hover h3{text-decoration:underline}
+.ciem .wiecej{color:#fff;margin-top:28px}
+
+/* redakcja */
+.red{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,4vw,80px);align-items:start}
+@media (min-width:1000px){.red{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}}
+.red figure{margin:0}
+.red figure button,.dok button{all:unset;cursor:zoom-in;display:block;width:100%}
+.red figure img{width:100%;aspect-ratio:852/520;object-fit:cover}
+.red figcaption{font-size:14px;color:var(--mut);margin-top:10px;line-height:1.45}
+.fakty{list-style:none;padding:0;margin:26px 0 0}
+.fakty li{position:relative;padding:0 0 16px 40px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.fakty li::before{content:"";position:absolute;left:0;top:6px;width:24px;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='M2 11 12 2l10 9' fill='none' stroke='%233ab54a' stroke-width='3'/%3E%3C/svg%3E") no-repeat}
+.fakty b{display:block}
+.dok{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.dok img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);background:#fff}
+.dok span{display:block;font-size:13px;color:var(--mut);margin-top:6px;line-height:1.35}
+.osoby{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:30px}
+@media (min-width:560px){.osoby{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.osoby div{border-top:3px solid var(--z);padding-top:14px}
+.osoby b{display:block;font-size:19px}
+.osoby small{display:block;color:var(--z2);font-weight:700;font-size:14px;margin-bottom:6px}
+.osoby p{font-size:15px;color:var(--mut);margin:6px 0 0}
+
+/* wydarzenia */
+.wyd{grid-auto-columns:min(82vw,420px)}
+@media (min-width:1100px){.wyd{grid-auto-columns:calc((100% - 3*16px)/3.4)}}
+@media (min-width:1600px){.wyd{grid-auto-columns:calc((100% - 3*16px)/4)}}
+.wyd .art{background:#fff;padding:0 0 22px}
+.wyd .art .fot{margin-bottom:18px}
+.wyd .art .meta,.wyd .art h3,.wyd .art p{padding:0 20px}
+
+/* wspolpraca + newsletter */
+.wsp{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(36px,5vw,96px)}
+@media (min-width:1000px){.wsp{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.formy{list-style:none;margin:26px 0 30px;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media (min-width:560px){.formy{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}}
+.formy li{padding:16px 0;border-bottom:1px solid var(--line)}
+.formy b{display:block;font-size:18px}
+.formy span{color:var(--mut);font-size:15px}
+.news{background:var(--g);padding:clamp(26px,3vw,48px);border-top:5px solid var(--z)}
+.news h3{font-size:clamp(24px,1vw + 18px,34px);margin-bottom:10px}
+.news p{color:var(--mut)}
+.pole{display:flex;flex-direction:column;gap:6px;margin:0 0 16px}
+.pole label{font-weight:700;font-size:15px}
+.pole input{font:inherit;font-size:17px;padding:14px 14px;border:1px solid #b9c3c6;border-radius:3px;background:#fff;width:100%}
+.pole input:focus{outline:3px solid rgba(58,181,74,.4);border-color:var(--z2)}
+.zgoda{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--mut);margin:0 0 20px;line-height:1.45}
+.zgoda input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--z2)}
+[aria-invalid=true]{border-color:#c62828!important;outline:2px solid rgba(198,40,40,.25)}
+#msg{margin:16px 0 0;padding:14px 16px;background:#e3f3e6;color:#11502a;font-weight:600;font-size:15px}
+
+/* stopka */
+footer{background:#16201a;color:#b9c4bd;padding:clamp(48px,5vw,80px) 0 26px;font-size:15px}
+.st{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 24px}
+@media (min-width:1000px){.st{grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr))}}
+.st .logo b{color:var(--z)}
+.st .logo i{color:#c3c6c8}
+.st h4{color:#fff;font-size:16px;margin:0 0 12px}
+.st p{margin:0 0 6px;line-height:1.55}
+.st a{text-decoration:none;overflow-wrap:anywhere}
+.st a:hover{color:#fff;text-decoration:underline}
+.st ul{list-style:none;margin:0;padding:0}
+.st li{margin-bottom:6px}
+.st .s1{grid-column:1/-1}
+@media (min-width:1000px){.st .s1{grid-column:auto}}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center;border-top:1px solid #2c3a31;margin-top:40px;padding-top:22px;font-size:14px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:100;background:rgba(10,16,12,.94);display:none;align-items:center;justify-content:center;padding:56px 12px 64px}
+#lb.otw{display:flex}
+#lb img{max-width:min(1400px,100%);max-height:100%;object-fit:contain}
+#lb p{position:absolute;left:16px;right:16px;bottom:16px;margin:0;color:#dfe7e1;font-size:14px;text-align:center}
+#lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:3px;cursor:pointer;font-size:26px;line-height:1;display:flex;align-items:center;justify-content:center}
+#lb .x{top:10px;right:10px}#lb .p{left:10px;top:50%;margin-top:-24px}#lb .n{right:10px;top:50%;margin-top:-24px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="d" viewBox="0 0 64 20" preserveAspectRatio="none"><path d="M2 19 32 2l30 17" fill="none" stroke="currentColor" stroke-width="4" vector-effect="non-scaling-stroke" stroke-linejoin="miter"/></symbol>
+ <symbol id="s" viewBox="0 0 22 12"><path d="M0 6h19M14 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+</svg>
+<header id="top">
+ <div class="wrap bar">
+  <a class="logo" href="#start" aria-label="ZielonaInfrastruktura.pl - strona główna">
+   <svg viewBox="0 0 112 100" aria-hidden="true"><g fill="none" stroke-width="9" stroke-linejoin="miter" stroke-linecap="butt"><path d="M7 96V33L33 9l26 24" stroke="#b7b8ba"/><path d="M7 92h98V70M56 92V76" stroke="#b7b8ba"/><path d="M33 72V45L67 14l34 31v27" stroke="#3ab54a"/></g></svg>
+   <span><b>zielona</b><i>infrastruktura.pl</i></span>
+  </a>
+  <nav class="menu" aria-label="Menu główne">
+   <a href="#najnowsze">Najnowsze</a>
+   <a href="#tematy">Dachy zielone</a>
+   <a href="#tematy">Retencja</a>
+   <a href="#pieniadze">Dofinansowanie i prawo</a>
+   <a href="#wydarzenia">Wydarzenia</a>
+   <a href="#redakcja">O nas</a>
+   <a class="btn" href="#wspolpraca">Współpraca</a>
+  </nav>
+  <button id="burger" aria-label="Otwórz menu" aria-expanded="false"><span></span></button>
+ </div>
+</header>
+
+<main id="start">
+<section class="hero" aria-labelledby="h1">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" sizes="100vw">
+  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1125" alt="Widok z lotu ptaka na rozległy ogród na dachu budynku, otoczony zielenią miasta" fetchpriority="high">
+ </picture>
+ <div class="hero-in">
+  <div class="hero-txt">
+   <svg class="dach duzy" aria-hidden="true"><use href="#d"/></svg>
+   <h1 id="h1">Zielona infrastruktura w&nbsp;miastach - znajdź miejsce na&nbsp;zieleń</h1>
+   <p class="lead">Dachy zielone, retencja wód opadowych, dofinansowania i&nbsp;przepisy. Portal ekspercki o&nbsp;adaptacji miast do zmian klimatu, który prowadzimy od 2013 roku.</p>
+   <a class="btn" href="#najnowsze">Czytaj najnowsze artykuły <svg aria-hidden="true"><use href="#s"/></svg></a>
+  </div>
+  <a class="naj" href="#najnowsze"><small>Najnowszy artykuł, 10.11.2026</small><b>Zielona rewolucja na szczecińskich dachach. Jak nowe standardy retencji zmieniają miejską architekturę</b></a>
+ </div>
+</section>
+
+<section class="sek" id="najnowsze" aria-labelledby="h-naj">
+ <div class="wrap">
+  <div class="glowa">
+   <div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h2 id="h-naj">Najnowsze artykuły</h2></div>
+   <a class="wiecej" href="#najnowsze">Wszystkie artykuły <svg aria-hidden="true"><use href="#s"/></svg></a>
+  </div>
+  <div class="siatka">
+   <a class="art glowny" href="#najnowsze">
+    <div class="fot"><img src="img/a-szczecin-800.webp" width="800" height="600" alt="Okładka dokumentu Standardy zagospodarowania wód opadowych dla miasta Szczecina" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Retencja</b><span>10.11.2026</span></div>
+    <h3>Zielona rewolucja na szczecińskich dachach. Jak nowe standardy retencji zmieniają podejście do miejskiej architektury</h3>
+    <p>Wprowadzone w sierpniu 2026 roku „Standardy zagospodarowania wód opadowych dla miasta Szczecina” wprowadzają jasną hierarchię: woda ma zostać tam, gdzie spadła. Wśród rozwiązań opartych na przyrodzie ważną rolę odgrywają dachy zielone.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-cptu-600.webp" srcset="img/a-cptu-600.webp 600w, img/a-cptu-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="335" alt="Sondowanie gruntu w parku miejskim" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Projektowanie</b><span>08.11.2026</span></div>
+    <h3>Badania gruntu pod zieloną infrastrukturę - dlaczego sondowanie CPTU ma znaczenie</h3>
+    <p>Parki, skwery, ogrody deszczowe i pasy bioretencyjne wymagają dokładnej znajomości warunków gruntowo-wodnych.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-pompa-600.webp" srcset="img/a-pompa-600.webp 600w, img/a-pompa-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="388" alt="Mężczyzna układa matę rozchodnikową na płaskim dachu" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Dachy zielone</b><span>16.10.2026</span></div>
+    <h3>Czy zielony dach można połączyć z fotowoltaiką i pompą ciepła w jednym budynku?</h3>
+    <p>Roślinność, moduły PV i pompa ciepła nie muszą ze sobą konkurować. Wymaga to decyzji na wczesnym etapie projektu.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-aura-800.webp" width="800" height="450" alt="Wizualizacja budynku AURA w Poznaniu z zieloną elewacją" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Retencja</b><span>14.10.2026</span></div>
+    <h3>AURA w Poznaniu. 140 tysięcy roślin, retencja i architektura bliżej natury</h3>
+    <p>Zielona elewacja aparthotelu projektu KWK Promes ma współtworzyć mikroklimat i korzystać z wody zatrzymywanej na działce.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-400mln-600.webp" srcset="img/a-400mln-600.webp 600w, img/a-400mln-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="400" alt="Zielone dachy na budynkach w mieście" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Dofinansowanie</b><span>14.10.2026</span></div>
+    <h3>400 mln zł na zagospodarowanie wód opadowych w miastach</h3>
+    <p>Nabór z programu FEnIKS: dachy zielone, ogrody deszczowe i tereny zieleni wspomagające naturalną retencję.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-pionowa-600.webp" srcset="img/a-pionowa-600.webp 600w, img/a-pionowa-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="402" alt="Pionowe moduły fotowoltaiczne na zielonym dachu" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>EPBD</b><span>28.07.2026</span></div>
+    <h3>Pionowa fotowoltaika na zielonych dachach. Jak przygotować budynki na wymagania EPBD</h3>
+    <p>Moduły ustawione pionowo zostawiają miejsce dla roślin i wody na tym samym dachu.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/t-bioroznorodnosc-600.webp" srcset="img/t-bioroznorodnosc-600.webp 600w, img/t-bioroznorodnosc-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="400" alt="Zielony dach z rozchodnikami nad wodą" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Dachy zielone</b><span>13.07.2026</span></div>
+    <h3>Zielone dachy jako siedliska przyrody. Jak wspierają bioróżnorodność w miastach?</h3>
+    <p>Dach zielony może być domem dla owadów, ptaków i roślin, których brakuje w zabudowie.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-gdansk-600.webp" srcset="img/a-gdansk-600.webp 600w, img/a-gdansk-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="400" alt="Grafika: Gdańsk wyznacza kierunek, dachy zielone w strategii miasta" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Miasta</b><span>19.07.2026</span></div>
+    <h3>Gdańsk postawił na zieloną retencję. Dachy zielone w miejskiej strategii przeciwpowodziowej</h3>
+    <p>Dachy zielone stają się elementem planu, który ma chronić miasto przed skutkami nawalnych deszczy.</p>
+   </a>
+   <a class="art" href="#najnowsze">
+    <div class="fot"><img src="img/a-kongres-600.webp" srcset="img/a-kongres-600.webp 600w, img/a-kongres-1200.webp 1200w" sizes="(min-width:1600px) 22vw,(min-width:1100px) 30vw,(min-width:700px) 46vw,100vw" width="600" height="338" alt="Baner VIII Kongresu Miasto Woda Jakość Życia" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div>
+    <div class="meta"><b>Patronat medialny</b><span>08.10.2026</span></div>
+    <h3>Czy Wrocław wróci na pierwsze miejsce wśród „wodnych miast”? VIII Kongres Miasto-Woda-Jakość Życia</h3>
+    <p>Kongres w Centrum Kongresowym Politechniki Wrocławskiej, 13-14 października 2026.</p>
+   </a>
+  </div>
+ </div>
+</section>
+
+<section class="sek sek-g" id="tematy" aria-labelledby="h-tem">
+ <div class="wrap">
+  <div class="glowa">
+   <div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h2 id="h-tem">Działy portalu</h2><p>Od zielonego dachu na jednym domu po strategię całego miasta.</p></div>
+   <div class="nav-t t1" data-nav="tor-tem"><button data-k="-1" aria-label="Poprzednie"><svg style="transform:scaleX(-1)"><use href="#s"/></svg></button><button data-k="1" aria-label="Następne"><svg><use href="#s"/></svg></button></div>
+  </div>
+  <div class="tory tematy" id="tor-tem" data-tor>
+   <a class="temat" href="#tematy"><img src="img/t-teneryfa-600.webp" width="600" height="400" alt="Roślinność na dachu budynku na Teneryfie" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>Dachy zielone</h3><p>Projektowanie, rośliny, utrzymanie</p></div></a>
+   <a class="temat" href="#tematy"><img src="img/t-gdynia-600.webp" width="600" height="331" alt="Central Park w Gdyni z lotu ptaka" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>Retencja</h3><p>Woda zostaje tam, gdzie spadła</p></div></a>
+   <a class="temat" href="#tematy"><img src="img/t-mokotow-600.webp" width="600" height="400" alt="Osiedle z zielenią i placem zabaw w Warszawie" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>Miasta i NBS</h3><p>Rozwiązania oparte na przyrodzie</p></div></a>
+   <a class="temat" href="#tematy"><img src="img/t-wiaty-600.webp" width="600" height="849" alt="Porównanie temperatur zwykłej i zielonej wiaty przystankowej w Krakowie" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>Miejska wyspa ciepła</h3><p>Jak zieleń chłodzi ulice</p></div></a>
+   <a class="temat" href="#tematy"><img src="img/t-mikroretencja-600.webp" width="600" height="600" alt="Rodzina podlewa ogród wodą deszczową" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>Dofinansowanie</h3><p>Programy, nabory, ulgi</p></div></a>
+   <a class="temat" href="#tematy"><img src="img/t-biosolarny-600.webp" width="600" height="760" alt="Dach biosolarny: rośliny i moduły fotowoltaiczne" loading="lazy"><div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h3>OZE na dachach</h3><p>Dachy biosolarne i EPBD</p></div></a>
+  </div>
+  <p class="dzialy"><b>Wszystkie działy:</b><a href="#tematy">Tarasy</a> <span>/</span> <a href="#tematy">Zielone torowiska</a> <span>/</span> <a href="#tematy">Adaptacja do zmian klimatu</a> <span>/</span> <a href="#tematy">GOZ</a> <span>/</span> <a href="#tematy">Prawo</a> <span>/</span> <a href="#tematy">Fala renowacji</a> <span>/</span> <a href="#tematy">Fundusze Norweskie</a> <span>/</span> <a href="#tematy">Publikacje</a> <span>/</span> <a href="#tematy">Na weekend</a> <span>/</span> <a href="#wydarzenia">Patronat medialny</a></p>
+ </div>
+</section>
+
+<section class="sek ciem" id="pieniadze" aria-labelledby="h-pien">
+ <div class="wrap pien">
+  <figure>
+   <img src="img/t-poznan-1200.webp" srcset="img/t-poznan-600.webp 600w, img/t-poznan-1200.webp 1200w" sizes="(min-width:1000px) 40vw,100vw" width="1200" height="750" alt="Grafika programu Zielona retencja w Poznaniu: oszczędzaj wodę" loading="lazy">
+   <svg aria-hidden="true"><use href="#d"/></svg>
+   <figcaption>Program „Zielona retencja” w Poznaniu - grafika z artykułu z 10.06.2026.</figcaption>
+  </figure>
+  <div>
+   <svg class="dach" aria-hidden="true"><use href="#d"/></svg>
+   <h2 id="h-pien">Pieniądze i przepisy na zieleń</h2>
+   <div class="glowa" style="margin-bottom:28px"><p>Nabory, ulgi i nowe standardy, które decydują, czy w mieście powstanie zielony dach, ogród deszczowy albo ściana z pnączami.</p></div>
+   <ul class="lista">
+    <li><a href="#pieniadze"><span class="data">14.10.2026</span><h3>400 mln zł z programu FEnIKS na wody opadowe w miastach</h3><p>Nabór wniosków od 15 października 2026 r. Wsparcie dla dachów zielonych, ogrodów deszczowych i terenów zieleni.</p></a></li>
+    <li><a href="#pieniadze"><span class="data">31.10.2026</span><h3>Kalisz przedłuża ulgę na zielone dachy i fasady do 2031 roku</h3><p>Zielony dach, ogród wertykalny albo elewacja z pnączami mogą oznaczać zwolnienie z podatku od nieruchomości.</p></a></li>
+    <li><a href="#pieniadze"><span class="data">10.11.2026</span><h3>Szczecin: nowe standardy zagospodarowania wód opadowych</h3><p>Zarządzenie nr 436/26 - deszczówka ma zostać na działce, a dachy zielone są jednym z rekomendowanych rozwiązań.</p></a></li>
+    <li><a href="#pieniadze"><span class="data">02.06.2026</span><h3>Mikroretencja przydomowa - nawet 8 000 zł dla osób prywatnych</h3><p>Zbiorniki na deszczówkę, ogrody deszczowe i oczka wodne przy domu z dofinansowaniem.</p></a></li>
+   </ul>
+   <a class="wiecej" href="#pieniadze">Wszystkie artykuły o dofinansowaniu <svg aria-hidden="true"><use href="#s"/></svg></a>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="redakcja" aria-labelledby="h-red">
+ <div class="wrap red">
+  <div>
+   <figure data-grupa>
+    <button data-lb="img/r-redakcja-852.webp" aria-label="Powiększ zdjęcie"><img src="img/r-redakcja-852.webp" width="852" height="520" alt="Katarzyna Wolańska, Piotr Wolański i dr inż. Beata Grygierzec na zielonym dachu domu pod Krakowem" loading="lazy"></button>
+    <figcaption>Od lewej: Katarzyna Wolańska, Piotr Wolański i dr inż. Beata Grygierzec na dachu z rozchodników pod Krakowem. Fot. Anna Kaczmarz, Dziennik Polski</figcaption>
+   </figure>
+   <div class="dok" data-grupa>
+    <figure style="margin:0"><button data-lb="img/r-wytyczne-600.webp" aria-label="Powiększ: wytyczne FLL"><img src="img/r-wytyczne-600.webp" width="600" height="850" alt="Podziękowanie za udział w opracowaniu Wytycznych dla dachów zielonych FLL" loading="lazy"></button><span>Wytyczne dla dachów zielonych FLL</span></figure>
+    <figure style="margin:0"><button data-lb="img/r-patent-600.webp" aria-label="Powiększ: opis patentowy"><img src="img/r-patent-600.webp" width="600" height="520" alt="Opis patentowy mieszanki do zadarniania dachów zielonych" loading="lazy"></button><span>Patent z Uniwersytetem Rolniczym</span></figure>
+    <figure style="margin:0"><button data-lb="img/r-katalog-600.webp" aria-label="Powiększ: katalog IOŚ-PIB"><img src="img/r-katalog-600.webp" width="600" height="600" alt="Okładka Katalogu dobrych praktyk adaptacyjnych IOŚ-PIB" loading="lazy"></button><span>Cytowani przez IOŚ-PIB</span></figure>
+   </div>
+  </div>
+  <div>
+   <svg class="dach" aria-hidden="true"><use href="#d"/></svg>
+   <h2 id="h-red">Piszą praktycy dachów zielonych</h2>
+   <p style="margin-top:20px;color:var(--mut)">Portal powstał w 2013 roku. Specjalizujemy się w dachach zielonych i zielono-niebieskiej infrastrukturze w miastach i gminach, opracowujemy ekspertyzy i współtworzymy szkolenia, publikacje oraz konferencje.</p>
+   <ul class="fakty">
+    <li><b>Wytyczne FLL po polsku</b>Byliśmy jednymi z inicjatorów i współautorami pierwszego i kolejnego polskiego wydania „Wytycznych dla dachów zielonych” FLL.</li>
+    <li><b>Patent na rośliny dla dachów zielonych</b>Udzielony w 2020 roku - wspólnie z Uniwersytetem Rolniczym w Krakowie.</li>
+    <li><b>Źródło dla instytucji</b>Nasze artykuły cytuje „Katalog dobrych praktyk adaptacyjnych” IOŚ-PIB.</li>
+    <li><b>Strategie dla miast</b>Konsultacje strategii dachów zielonych dla 8 miast pilotażowych, m.in. Krakowa, Warszawy, Wrocławia i Gdyni.</li>
+   </ul>
+   <div class="osoby">
+    <div><small>Redaktor prowadząca</small><b>Katarzyna Wolańska</b><p>Członek jury World Green Infrastructure Award 2024 i 2025, członek Zarządu Polskiego Stowarzyszenia „Dachy Zielone”.</p></div>
+    <div><small>Współpraca merytoryczna</small><b>Piotr Wolański</b><p>Od 16 lat zajmuje się dachami zielonymi: konsultuje projekty, przygotowuje opinie eksperckie, realizuje inwestycje.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sek sek-g" id="wydarzenia" aria-labelledby="h-wyd">
+ <div class="wrap">
+  <div class="glowa">
+   <div><svg class="dach" aria-hidden="true"><use href="#d"/></svg><h2 id="h-wyd">Patronaty i wydarzenia</h2><p>Obejmujemy patronatem medialnym konferencje o wodzie, zieleni i klimacie w miastach.</p></div>
+   <div class="nav-t" data-nav="tor-wyd"><button data-k="-1" aria-label="Poprzednie"><svg style="transform:scaleX(-1)"><use href="#s"/></svg></button><button data-k="1" aria-label="Następne"><svg><use href="#s"/></svg></button></div>
+  </div>
+  <div class="tory wyd" id="tor-wyd" data-tor>
+   <a class="art" href="#wydarzenia"><div class="fot"><img src="img/a-kongres-600.webp" width="600" height="338" alt="VIII Kongres Miasto Woda Jakość Życia" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div><div class="meta"><b>Wrocław</b><span>13-14.10.2026</span></div><h3>VIII Kongres Miasto-Woda-Jakość Życia</h3></a>
+   <a class="art" href="#wydarzenia"><div class="fot"><img src="img/a-debata-600.webp" width="600" height="338" alt="Narodowa Debata o Bezpieczeństwie Klimatycznym Polek i Polaków" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div><div class="meta"><b>Debata</b><span>11.09.2026</span></div><h3>Narodowa Debata o Bezpieczeństwie Klimatycznym Polek i Polaków a miasta</h3></a>
+   <a class="art" href="#wydarzenia"><div class="fot"><img src="img/t-konferencja-600.webp" width="600" height="400" alt="Sala konferencji Zazielenianie współczesnych miast" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div><div class="meta"><b>Relacja</b><span>25.05.2026</span></div><h3>Zazielenianie współczesnych miast - relacja z konferencji PSDZ</h3></a>
+   <a class="art" href="#wydarzenia"><div class="fot"><img src="img/t-stormwater-600.webp" width="600" height="400" alt="Panel dyskusyjny na konferencji Stormwater Poland 2026" loading="lazy"><svg aria-hidden="true"><use href="#d"/></svg></div><div class="meta"><b>Relacja</b><span>01.04.2026</span></div><h3>Błękitno-zielona rewolucja w gąszczu przepisów. Debata Stormwater Poland</h3></a>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="wspolpraca" aria-labelledby="h-wsp">
+ <div class="wrap wsp">
+  <div>
+   <svg class="dach" aria-hidden="true"><use href="#d"/></svg>
+   <h2 id="h-wsp">Współpraca z redakcją</h2>
+   <p style="margin-top:20px;color:var(--mut)">Do współpracy podchodzimy indywidualnie. Współpracujemy z firmami i instytucjami, którym zależy na zielonym marketingu i ekowizerunku.</p>
+   <ul class="formy">
+    <li><b>Patronat medialny</b><span>nad konferencją, kongresem lub szkoleniem</span></li>
+    <li><b>Artykuł ekspercki</b><span>merytorycznie związany z tematyką portalu</span></li>
+    <li><b>Content marketing</b><span>treści o rozwiązaniach i realizacjach</span></li>
+    <li><b>Reklama</b><span>na stronie i w newsletterze</span></li>
+   </ul>
+   <a class="btn" href="#wspolpraca">Napisz do redakcji <svg aria-hidden="true"><use href="#s"/></svg></a>
+   <p style="margin-top:16px;font-size:15px;color:var(--mut)">redakcja@zielonainfrastruktura.pl, tel. +48 793 00 44 14</p>
+  </div>
+  <div class="news">
+   <h3>Newsletter portalu</h3>
+   <p>Najważniejsze artykuły, nabory i wydarzenia w jednej wiadomości.</p>
+   <form id="form" novalidate>
+    <div class="pole"><label for="em">Adres e-mail</label><input id="em" type="email" required autocomplete="email" placeholder="np. jan@gmina.pl"></div>
+    <label class="zgoda"><input type="checkbox" required> Zgadzam się na otrzymywanie newslettera. Mogę zrezygnować w każdej chwili.</label>
+    <button class="btn" type="submit">Zapisz się <svg aria-hidden="true"><use href="#s"/></svg></button>
+    <p id="msg" hidden>To podgląd - na docelowej stronie zapis zadziała od razu.</p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="st">
+   <div class="s1">
+    <a class="logo" href="#start" aria-label="ZielonaInfrastruktura.pl"><svg viewBox="0 0 112 100" aria-hidden="true" style="height:50px"><g fill="none" stroke-width="9"><path d="M7 96V33L33 9l26 24" stroke="#8d9093"/><path d="M7 92h98V70M56 92V76" stroke="#8d9093"/><path d="M33 72V45L67 14l34 31v27" stroke="#3ab54a"/></g></svg><span><b>zielona</b><i>infrastruktura.pl</i></span></a>
+    <p style="margin-top:16px;max-width:36ch">Portal o zielonej infrastrukturze i adaptacji miast do zmian klimatu. Od 2013 roku.</p>
+   </div>
+   <div><h4>Wydawca</h4><p>APK Dachy Zielone Sp. z o.o.<br>ul. Kolna 12C, 30-381 Kraków<br>NIP 6762660287</p></div>
+   <div><h4>Kontakt</h4><p><a href="#wspolpraca">redakcja@zielonainfrastruktura.pl</a><br><a href="#wspolpraca">+48 793 00 44 14</a></p><p style="margin-top:10px"><a href="#start">Facebook</a> · <a href="#start">LinkedIn</a> · <a href="#start">Instagram</a></p></div>
+   <div><h4>Portal</h4><ul><li><a href="#najnowsze">Najnowsze</a></li><li><a href="#tematy">Działy</a></li><li><a href="#redakcja">O nas</a></li><li><a href="#wspolpraca">Współpraca</a></li><li><a href="#start">Polityka prywatności</a></li></ul></div>
+  </div>
+  <div class="dol"><span>© <span id="rok">2026</span> ZielonaInfrastruktura.pl</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=zielonainfrastruktura.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><img alt=""><p></p><button class="x" aria-label="Zamknij">&times;</button><button class="p" aria-label="Poprzednie">&#8249;</button><button class="n" aria-label="Następne">&#8250;</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
